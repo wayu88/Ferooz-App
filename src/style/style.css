@@ -9,9 +9,53 @@ a.active{
 }
 
 nav{
-    padding-top:20px;
+    height:50px;
+   
 }
 
 td, th {
     padding: 6px;
+}
+
+ 
+.container-sub-nav{
+    background-color: #FED000;
+    
+}
+
+.navbar {
+    position: relative;
+    background: none;
+}
+.navbar-nav {
+    margin: 0 auto;
+    line-height: 5em;
+}
+.nav-link {
+    height: auto;
+    line-height: inherit;
+    padding: .75em 30px;
+    color:black;
+    font-size: 15px;
+    font-weight: bolder;
+}
+ 
+.nav-item {
+  position: relative;
+}
+.active:after, .nav-item:hover:after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 27%;
+   
+    border-width: 5px;
+    border-style: solid;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 20px 20px 20px;
+    top:52px;
+    border-color: transparent transparent #F5F5F5 transparent;
+     
 }

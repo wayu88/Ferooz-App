@@ -1,6 +1,7 @@
 import React,{PropTypes} from 'react';
 import Header from './Header';
 import ComparisionComponent from './Comparision'
+import PageHeader from './PageHeader';
 
 export class App extends React.Component{
         constructor(props){
@@ -92,6 +93,10 @@ export class App extends React.Component{
         render(){
                     return(
                             <div className="container-fluid">
+                                <div className="row">
+                                    <PageHeader/>
+                                </div>
+                                
                                 <div className="well">
                                     <div className="row">
                                         <Header title="Total Dark" dataArray={this.state.dataArray}/>
